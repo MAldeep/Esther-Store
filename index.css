@@ -1,75 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
 }
 p{
     margin: 0;
 }
 .fluid{
     min-height: 100vh;
-    .welcome-bar,header{
+    .welcome-bar{
         background-color: #FDB813;
+        padding: 15px 0;
+        border-bottom: 0.5px solid #33333316;
+        p,a,i{
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 400;
+            color: #333333;
+        }
+        .divider{
+            width: 1px ;
+            height: 20px;
+            background-color: black;
+        }
     }
-    header{
+    .nav-bar{
+        background-color: #FDB813;
+        padding: 25px 0;
         img{
             width: 67px;
             height: 16px;
             object-fit: cover;
         }
-        .search{
-            input{
-                width: 460px;
-                outline: none;
-            }
+        i.menu-icon{
+            font-size: 30px;
+            border: 1px solid #333333;
+            color: #333333;
         }
-        .contact{
-            img{
-                width: 32px;
-                height: 32px;
-                object-fit: cover;
-            }
-        }
-    }
-    nav{
-        i{
-            position: relative;
-        }
-        i::after{
-            content: "0";
-            position: absolute;
-            top: -3px;
-            right: -3px;
-            background-color: #FDB813;
-            border-radius: 50%;
-            font-size: 10px;
-            padding: 3px;
-        }
-    }
-    .hero-slider{
-        .my-caption{
-            h1{
-                font-size: 80px ;
-                font-weight: 700;
-            }
-            button{
-                color: black;
-                background-color: #FDB813;
-                transition: all 0.3s ease;
-                &:hover{
+        nav{
+            .search{
+                width: 50%;
+                input{
+                    width: 90%;
+                    padding: 12px 30px;
+                    border: none;
+                    outline: none;
+                    border-radius: 8px 0 0 8px;
+                }
+                i{
+                    background-color: #333333;
                     color: white;
-                    background-color: #333;
+                    font-size: 30px;
+                    padding: 9px;
+                    border-radius: 0 8px 8px 0;
                 }
             }
-        }
-    }
-    .offers{
-        .offer{
-            img{
-                transition: all 0.5s ease;
-                &:hover{
-                    transform: scale(1.04);
-                    cursor: pointer;
+            .service{
+                i{
+                    font-size: 40px;
+                    color: #333333;
+                }
+                p.phone-num{
+                    font-weight: 700;
                 }
             }
         }
